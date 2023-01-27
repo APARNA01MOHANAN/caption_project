@@ -5,9 +5,10 @@ Library    AppiumLibrary
 
 *** Test Cases ***
 
-TC1 Swipe
+Select Courses
     [Documentation]       working with native app
-    ...   for automating sign up activity
+    ...   for automating sign up activity and selecting the course
+    ...   then will be validating part of text in the page
     Open Application   remote_url=http://localhost:4723/wd/hub
     ...   platformName=android
     ...   deviceName=redminote5pro

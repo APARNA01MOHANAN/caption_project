@@ -4,11 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98c8c771-1cff-479a-bde2-e4a00c5a7289" name="Changes" comment="" />
+    <list default="true" id="98c8c771-1cff-479a-bde2-e4a00c5a7289" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_assessment_coursera/app_coursera.robot" beforeDir="false" afterPath="$PROJECT_DIR$/appium_assessment_coursera/app_coursera.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/base/common_functionalities.resource" beforeDir="false" afterPath="$PROJECT_DIR$/resource/base/common_functionalities.resource" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2KuJY37aL5Cn6QiKGTvYxM6nyfq" />
   <component name="ProjectViewState">
@@ -19,7 +29,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Caption_Project/appium_assessment_coursera/app_coursera.robot"
+    "last_opened_file_path": "C:/Caption_Project"
   }
 }]]></component>
   <component name="RunManager">
