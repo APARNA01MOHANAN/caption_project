@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98c8c771-1cff-479a-bde2-e4a00c5a7289" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/1__Login_Suite/01__Valid_Login_test.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_input_data/CHUMBAK_DATA.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appium_assessment_coursera/app_coursera.robot" beforeDir="false" afterPath="$PROJECT_DIR$/appium_assessment_coursera/app_coursera.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/log/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resource/base/common_functionalities.resource" beforeDir="false" afterPath="$PROJECT_DIR$/resource/base/common_functionalities.resource" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,9 +33,14 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Caption_Project"
+    "last_opened_file_path": "C:/Caption_Project/test_input_data"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Caption_Project\test_input_data" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Caption_Project" />
@@ -65,5 +74,16 @@
       <updated>1674818578848</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="robot-line">
+          <url>file://$PROJECT_DIR$/resource/base/common_functionalities.resource</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

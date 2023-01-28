@@ -1,301 +1,449 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230127 17:29:50.325" rpa="false" schemaversion="3">
-<suite id="s1" name="App Coursera" source="C:\Caption_Project\appium_assessment_coursera\app_coursera.robot">
-<test id="s1-t1" name="TC1 Swipe" line="8">
-<kw name="Open Application" library="AppiumLibrary">
-<arg>remote_url=http://localhost:4723/wd/hub</arg>
-<arg>platformName=android</arg>
-<arg>deviceName=redminote5pro</arg>
-<arg>appPackage=org.coursera.android</arg>
-<arg>appActivity=org.coursera.android.MainActivity</arg>
-<doc>Opens a new application to given Appium server.
-Capabilities of appium server, Android and iOS,
-Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
-| *Option*            | *Man.* | *Description*     |
-| remote_url          | Yes    | Appium server url |
-| alias               | no     | alias             |
-| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" starttime="20230127 17:29:50.712" endtime="20230127 17:30:11.563"/>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230128 12:16:53.203" rpa="false" schemaversion="3">
+<suite id="s1" name="Valid Login test" source="C:\Caption_Project\1__Login_Suite\01__Valid_Login_test.robot">
+<test id="s1-t1" name="Valid Login Testcase_Valid_Login_1" line="14">
+<kw name="Launch Browser And Navigate To Url" library="common_functionalities" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER_NAME}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230128 12:16:54.327" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230128 12:16:54.327" endtime="20230128 12:16:57.132"/>
 </kw>
-<kw name="Set Appium Timeout" library="AppiumLibrary">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230128 12:16:57.133" endtime="20230128 12:16:57.259"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>30s</arg>
-<doc>Sets the timeout in seconds used by various keywords.</doc>
-<status status="PASS" starttime="20230127 17:30:11.563" endtime="20230127 17:30:11.570"/>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230128 12:16:57.260" endtime="20230128 12:16:57.264"/>
 </kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.Button[@text='New to Coursera? Create Account']</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230127 17:30:17.483" level="INFO">xpath criteria: //android.widget.Button[@text='New to Coursera? Create Account']
-xpath criteria: //android.widget.Button[@text='New to Coursera? Create Account']
-xpath criteria: //android.widget.Button[@text='New to Coursera? Create Account']
-xpath criteria: //android.widget.Button[@text='New to Coursera? Create Account']
-xpath criteria: //android.widget.Button[@text='New to Coursera? Create Account']
-xpath criteria: //android.widget.Button[@text='New to Coursera? Create Account']
-xpath criteria: //android.widget.Button[@text='New to Coursera? Create Account']
-xpath criteria: //android.widget.Button[@text='New to Coursera? Create Account']
-xpath criteria: //android.widget.Button[@text='New to Coursera? Create Account']
-xpath criteria: //android.widget.Button[@text='New to Coursera? Create Account']
-xpath criteria: //android.widget.Button[@text='New to Coursera? Create Account']
-xpath criteria: //android.widget.Button[@text='New to Coursera? Create Account']
-xpath criteria: //android.widget.Button[@text='New to Coursera? Create Account']</msg>
-<status status="PASS" starttime="20230127 17:30:11.570" endtime="20230127 17:30:17.483"/>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230128 12:16:57.266" level="INFO">Opening url 'https://www.chumbak.com/'</msg>
+<status status="PASS" starttime="20230128 12:16:57.264" endtime="20230128 12:17:09.589"/>
 </kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.Button[@text='New to Coursera? Create Account']</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230127 17:30:17.483" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='New to Coursera? Create Account']'.</msg>
-<msg timestamp="20230127 17:30:17.777" level="INFO">xpath criteria: //android.widget.Button[@text='New to Coursera? Create Account']</msg>
-<status status="PASS" starttime="20230127 17:30:17.483" endtime="20230127 17:30:17.777"/>
+<status status="PASS" starttime="20230128 12:16:54.326" endtime="20230128 12:17:09.590"/>
 </kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.EditText[@text='Full Name (Required)']</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230127 17:30:19.357" level="INFO">xpath criteria: //android.widget.EditText[@text='Full Name (Required)']
-xpath criteria: //android.widget.EditText[@text='Full Name (Required)']</msg>
-<status status="PASS" starttime="20230127 17:30:17.777" endtime="20230127 17:30:19.357"/>
+<kw name="Valid Login Template">
+<arg>AP</arg>
+<arg>MO</arg>
+<arg>aparnaml@gmail.com</arg>
+<arg>doddy123</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=user_6_</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230128 12:17:09.596" level="INFO">Clicking element 'id=user_6_'.</msg>
+<status status="PASS" starttime="20230128 12:17:09.594" endtime="20230128 12:17:09.689"/>
 </kw>
-<kw name="Input Text" library="AppiumLibrary">
-<arg>xpath=//android.widget.EditText[@text='Full Name (Required)']</arg>
-<arg>APARNA MOHANAN</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20230127 17:30:19.374" level="INFO">Typing text 'APARNA MOHANAN' into text field 'xpath=//android.widget.EditText[@text='Full Name (Required)']'</msg>
-<msg timestamp="20230127 17:30:20.144" level="INFO">xpath criteria: //android.widget.EditText[@text='Full Name (Required)']</msg>
-<status status="PASS" starttime="20230127 17:30:19.357" endtime="20230127 17:30:20.144"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=Login</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230128 12:17:09.691" level="INFO">Clicking element 'link=Login'.</msg>
+<status status="PASS" starttime="20230128 12:17:09.689" endtime="20230128 12:17:12.321"/>
 </kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.EditText[@text='E-mail (Required)']</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230127 17:30:21.333" level="INFO">xpath criteria: //android.widget.EditText[@text='E-mail (Required)']</msg>
-<status status="PASS" starttime="20230127 17:30:20.144" endtime="20230127 17:30:21.333"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=Create one</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230128 12:17:12.323" level="INFO">Clicking element 'link=Create one'.</msg>
+<status status="PASS" starttime="20230128 12:17:12.321" endtime="20230128 12:17:15.531"/>
 </kw>
-<kw name="Input Text" library="AppiumLibrary">
-<arg>xpath=//android.widget.EditText[@text='E-mail (Required)']</arg>
-<arg>aparna123@gmail.com</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20230127 17:30:21.333" level="INFO">Typing text 'aparna123@gmail.com' into text field 'xpath=//android.widget.EditText[@text='E-mail (Required)']'</msg>
-<msg timestamp="20230127 17:30:22.117" level="INFO">xpath criteria: //android.widget.EditText[@text='E-mail (Required)']</msg>
-<status status="PASS" starttime="20230127 17:30:21.333" endtime="20230127 17:30:22.117"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=customer[first_name]</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230128 12:17:15.532" level="INFO">Typing text 'AP' into text field 'name=customer[first_name]'.</msg>
+<status status="PASS" starttime="20230128 12:17:15.531" endtime="20230128 12:17:15.700"/>
 </kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.EditText[@text='Password (Required)']</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230127 17:30:22.737" level="INFO">xpath criteria: //android.widget.EditText[@text='Password (Required)']</msg>
-<status status="PASS" starttime="20230127 17:30:22.117" endtime="20230127 17:30:22.737"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=customer[last_name]</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230128 12:17:15.701" level="INFO">Typing text 'MO' into text field 'name=customer[last_name]'.</msg>
+<status status="PASS" starttime="20230128 12:17:15.700" endtime="20230128 12:17:16.060"/>
 </kw>
-<kw name="Input Text" library="AppiumLibrary">
-<arg>xpath=//android.widget.EditText[@text='Password (Required)']</arg>
-<arg>aparna123</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20230127 17:30:22.737" level="INFO">Typing text 'aparna123' into text field 'xpath=//android.widget.EditText[@text='Password (Required)']'</msg>
-<msg timestamp="20230127 17:30:24.158" level="INFO">xpath criteria: //android.widget.EditText[@text='Password (Required)']</msg>
-<status status="PASS" starttime="20230127 17:30:22.737" endtime="20230127 17:30:24.158"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=customer[email]</arg>
+<arg>${mailid}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230128 12:17:16.061" level="INFO">Typing text 'aparnaml@gmail.com' into text field 'name=customer[email]'.</msg>
+<status status="PASS" starttime="20230128 12:17:16.060" endtime="20230128 12:17:16.235"/>
 </kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.Button[@text='Create New Account']</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230127 17:30:25.295" level="INFO">xpath criteria: //android.widget.Button[@text='Create New Account']</msg>
-<status status="PASS" starttime="20230127 17:30:24.158" endtime="20230127 17:30:25.295"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=customer[password]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230128 12:17:16.236" level="INFO">Typing text 'doddy123' into text field 'name=customer[password]'.</msg>
+<status status="PASS" starttime="20230128 12:17:16.235" endtime="20230128 12:17:16.368"/>
 </kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.Button[@text='Create New Account']</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230127 17:30:25.295" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='Create New Account']'.</msg>
-<msg timestamp="20230127 17:30:25.468" level="INFO">xpath criteria: //android.widget.Button[@text='Create New Account']</msg>
-<status status="PASS" starttime="20230127 17:30:25.295" endtime="20230127 17:30:25.468"/>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${login}</var>
+<arg>xpath=//button[text()='Create my account']</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20230128 12:17:16.385" level="INFO">${login} = &lt;selenium.webdriver.remote.webelement.WebElement (session="70cd33f10492aff5d3b79aac7aa7697a", element="5d9a1603-770f-47e8-b9fa-9467f1ab4ec4")&gt;</msg>
+<status status="PASS" starttime="20230128 12:17:16.368" endtime="20230128 12:17:16.385"/>
 </kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.Button[@text='Explore courses']</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230127 17:30:35.431" level="INFO">xpath criteria: //android.widget.Button[@text='Explore courses']
-xpath criteria: //android.widget.Button[@text='Explore courses']
-xpath criteria: //android.widget.Button[@text='Explore courses']
-xpath criteria: //android.widget.Button[@text='Explore courses']
-xpath criteria: //android.widget.Button[@text='Explore courses']
-xpath criteria: //android.widget.Button[@text='Explore courses']
-xpath criteria: //android.widget.Button[@text='Explore courses']
-xpath criteria: //android.widget.Button[@text='Explore courses']
-xpath criteria: //android.widget.Button[@text='Explore courses']
-xpath criteria: //android.widget.Button[@text='Explore courses']
-xpath criteria: //android.widget.Button[@text='Explore courses']
-xpath criteria: //android.widget.Button[@text='Explore courses']
-xpath criteria: //android.widget.Button[@text='Explore courses']
-xpath criteria: //android.widget.Button[@text='Explore courses']
-xpath criteria: //android.widget.Button[@text='Explore courses']
-xpath criteria: //android.widget.Button[@text='Explore courses']
-xpath criteria: //android.widget.Button[@text='Explore courses']
-xpath criteria: //android.widget.Button[@text='Explore courses']
-xpath criteria: //android.widget.Button[@text='Explore courses']
-xpath criteria: //android.widget.Button[@text='Explore courses']</msg>
-<status status="PASS" starttime="20230127 17:30:25.468" endtime="20230127 17:30:35.431"/>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.Button[@text='Explore courses']</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230127 17:30:35.431" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='Explore courses']'.</msg>
-<msg timestamp="20230127 17:30:35.568" level="INFO">xpath criteria: //android.widget.Button[@text='Explore courses']</msg>
-<status status="PASS" starttime="20230127 17:30:35.431" endtime="20230127 17:30:35.568"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.EditText[@resource-id='org.coursera.android:id/search_src_text']</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230127 17:30:36.745" level="INFO">xpath criteria: //android.widget.EditText[@resource-id='org.coursera.android:id/search_src_text']</msg>
-<status status="PASS" starttime="20230127 17:30:35.568" endtime="20230127 17:30:36.745"/>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.EditText[@resource-id='org.coursera.android:id/search_src_text']</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230127 17:30:36.745" level="INFO">Clicking element 'xpath=//android.widget.EditText[@resource-id='org.coursera.android:id/search_src_text']'.</msg>
-<msg timestamp="20230127 17:30:39.380" level="INFO">xpath criteria: //android.widget.EditText[@resource-id='org.coursera.android:id/search_src_text']</msg>
-<status status="PASS" starttime="20230127 17:30:36.745" endtime="20230127 17:30:39.380"/>
-</kw>
-<kw name="Input Text" library="AppiumLibrary">
-<arg>xpath=//android.widget.EditText[@resource-id='org.coursera.android:id/search_src_text']</arg>
-<arg>robot</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20230127 17:30:39.380" level="INFO">Typing text 'robot' into text field 'xpath=//android.widget.EditText[@resource-id='org.coursera.android:id/search_src_text']'</msg>
-<msg timestamp="20230127 17:30:41.532" level="INFO">xpath criteria: //android.widget.EditText[@resource-id='org.coursera.android:id/search_src_text']</msg>
-<status status="PASS" starttime="20230127 17:30:39.380" endtime="20230127 17:30:41.532"/>
-</kw>
-<kw name="Hide Keyboard" library="AppiumLibrary">
-<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
-a particular key, ex. `Done`. In Android, no parameters are used.</doc>
-<status status="PASS" starttime="20230127 17:30:41.532" endtime="20230127 17:30:44.942"/>
-</kw>
-<kw name="Get Matching Xpath Count" library="AppiumLibrary">
-<var>${count}</var>
-<arg>xpath=//android.widget.TextView[contains(@text,'making the case for robotic')]</arg>
-<doc>Returns number of elements matching ``xpath``</doc>
-<msg timestamp="20230127 17:30:45.569" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,'making the case for robotic')]</msg>
-<msg timestamp="20230127 17:30:45.569" level="INFO">${count} = 0</msg>
-<status status="PASS" starttime="20230127 17:30:44.942" endtime="20230127 17:30:45.569"/>
-</kw>
-<while condition="${count}==0">
-<iter>
-<kw name="Swipe By Percent" library="AppiumLibrary">
-<arg>90</arg>
-<arg>75</arg>
-<arg>90</arg>
-<arg>25</arg>
-<doc>Swipe from one percent of the screen to another percent, for an optional duration.
-Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
-<status status="PASS" starttime="20230127 17:30:45.569" endtime="20230127 17:30:47.041"/>
-</kw>
-<kw name="Get Matching Xpath Count" library="AppiumLibrary">
-<var>${count}</var>
-<arg>xpath=//android.widget.TextView[contains(@text,'making the case for robotic')]</arg>
-<doc>Returns number of elements matching ``xpath``</doc>
-<msg timestamp="20230127 17:30:48.012" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,'making the case for robotic')]</msg>
-<msg timestamp="20230127 17:30:48.012" level="INFO">${count} = 0</msg>
-<status status="PASS" starttime="20230127 17:30:47.041" endtime="20230127 17:30:48.012"/>
-</kw>
-<status status="PASS" starttime="20230127 17:30:45.569" endtime="20230127 17:30:48.012"/>
-</iter>
-<iter>
-<kw name="Swipe By Percent" library="AppiumLibrary">
-<arg>90</arg>
-<arg>75</arg>
-<arg>90</arg>
-<arg>25</arg>
-<doc>Swipe from one percent of the screen to another percent, for an optional duration.
-Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
-<status status="PASS" starttime="20230127 17:30:48.012" endtime="20230127 17:30:49.400"/>
-</kw>
-<kw name="Get Matching Xpath Count" library="AppiumLibrary">
-<var>${count}</var>
-<arg>xpath=//android.widget.TextView[contains(@text,'making the case for robotic')]</arg>
-<doc>Returns number of elements matching ``xpath``</doc>
-<msg timestamp="20230127 17:30:50.290" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,'making the case for robotic')]</msg>
-<msg timestamp="20230127 17:30:50.290" level="INFO">${count} = 1</msg>
-<status status="PASS" starttime="20230127 17:30:49.400" endtime="20230127 17:30:50.290"/>
-</kw>
-<status status="PASS" starttime="20230127 17:30:48.012" endtime="20230127 17:30:50.290"/>
-</iter>
-<status status="PASS" starttime="20230127 17:30:45.569" endtime="20230127 17:30:50.290"/>
-</while>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.TextView[contains(@text,'making the case for robotic')]</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230127 17:30:50.439" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,'making the case for robotic')]</msg>
-<status status="PASS" starttime="20230127 17:30:50.290" endtime="20230127 17:30:50.439"/>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.TextView[contains(@text,'making the case for robotic')]</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230127 17:30:50.439" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text,'making the case for robotic')]'.</msg>
-<msg timestamp="20230127 17:30:50.666" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,'making the case for robotic')]</msg>
-<status status="PASS" starttime="20230127 17:30:50.439" endtime="20230127 17:30:50.666"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.TextView[contains(@text,'Making the Case for Robotic')]</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230127 17:30:52.770" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,'Making the Case for Robotic')]
-xpath criteria: //android.widget.TextView[contains(@text,'Making the Case for Robotic')]
-xpath criteria: //android.widget.TextView[contains(@text,'Making the Case for Robotic')]</msg>
-<status status="PASS" starttime="20230127 17:30:50.666" endtime="20230127 17:30:52.770"/>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.TextView[contains(@text,'Making the Case for Robotic')]</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230127 17:30:52.770" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text,'Making the Case for Robotic')]'.</msg>
-<msg timestamp="20230127 17:30:53.503" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,'Making the Case for Robotic')]</msg>
-<status status="PASS" starttime="20230127 17:30:52.770" endtime="20230127 17:30:53.503"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//*[contains(@text,'About this Course')]</arg>
-<arg>30s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230127 17:30:56.337" level="INFO">xpath criteria: //*[contains(@text,'About this Course')]
-xpath criteria: //*[contains(@text,'About this Course')]
-xpath criteria: //*[contains(@text,'About this Course')]
-xpath criteria: //*[contains(@text,'About this Course')]</msg>
-<status status="PASS" starttime="20230127 17:30:53.503" endtime="20230127 17:30:56.337"/>
-</kw>
-<kw name="Get Text" library="AppiumLibrary">
-<var>${text}</var>
-<arg>xpath=//*[contains(@text,'About this Course')]</arg>
-<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
-<msg timestamp="20230127 17:30:57.216" level="INFO">Element 'xpath=//*[contains(@text,'About this Course')]' text is 'About this Course' </msg>
-<msg timestamp="20230127 17:30:57.216" level="INFO">xpath criteria: //*[contains(@text,'About this Course')]</msg>
-<msg timestamp="20230127 17:30:57.216" level="INFO">${text} = About this Course</msg>
-<status status="PASS" starttime="20230127 17:30:56.337" endtime="20230127 17:30:57.216"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${text}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230127 17:30:57.216" endtime="20230127 17:30:57.216"/>
-</kw>
-<kw name="Element Text Should Be" library="AppiumLibrary">
-<arg>xpath=//*[contains(@text,'About this Course')]</arg>
-<arg>About this Course</arg>
-<doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
-<msg timestamp="20230127 17:30:57.216" level="INFO">Verifying element 'xpath=//*[contains(@text,'About this Course')]' contains exactly text 'About this Course'.</msg>
-<msg timestamp="20230127 17:30:57.415" level="INFO">xpath criteria: //*[contains(@text,'About this Course')]</msg>
-<status status="PASS" starttime="20230127 17:30:57.216" endtime="20230127 17:30:57.415"/>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>arguments[0].click()</arg>
+<arg>ARGUMENTS</arg>
+<arg>${login}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230128 12:17:16.389" level="INFO">Executing JavaScript:
+arguments[0].click()
+By using argument:
+'&lt;selenium.webdriver.remote.webelement.WebElement (session="70cd33f10492aff5d3b79aac7aa7697a", element="5d9a1603-770f-47e8-b9fa-9467f1ab4ec4")&gt;'</msg>
+<status status="PASS" starttime="20230128 12:17:16.386" endtime="20230128 12:17:20.594"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>30s</arg>
+<arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230127 17:31:27.416" level="INFO">Slept 30 seconds</msg>
-<status status="PASS" starttime="20230127 17:30:57.415" endtime="20230127 17:31:27.416"/>
+<msg timestamp="20230128 12:17:30.596" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230128 12:17:20.595" endtime="20230128 12:17:30.597"/>
 </kw>
-<kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
-<doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20230127 17:31:27.416" endtime="20230127 17:31:28.158"/>
+<status status="PASS" starttime="20230128 12:17:09.590" endtime="20230128 12:17:30.597"/>
 </kw>
-<doc>working with native app
-for automating sign up activity</doc>
-<status status="PASS" starttime="20230127 17:29:50.712" endtime="20230127 17:31:28.158"/>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230128 12:17:30.598" endtime="20230128 12:17:32.902"/>
+</kw>
+<status status="PASS" starttime="20230128 12:16:54.322" endtime="20230128 12:17:32.902"/>
 </test>
-<status status="PASS" starttime="20230127 17:29:50.342" endtime="20230127 17:31:28.159"/>
+<test id="s1-t2" name="Valid Login Testcase_Valid_Login_2" line="14">
+<kw name="Launch Browser And Navigate To Url" library="common_functionalities" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER_NAME}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230128 12:17:32.902" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230128 12:17:32.902" endtime="20230128 12:17:34.713"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230128 12:17:34.714" endtime="20230128 12:17:34.837"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>30s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230128 12:17:34.837" endtime="20230128 12:17:34.840"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230128 12:17:34.843" level="INFO">Opening url 'https://www.chumbak.com/'</msg>
+<status status="PASS" starttime="20230128 12:17:34.842" endtime="20230128 12:17:38.456"/>
+</kw>
+<status status="PASS" starttime="20230128 12:17:32.902" endtime="20230128 12:17:38.456"/>
+</kw>
+<kw name="Valid Login Template">
+<arg>NI</arg>
+<arg>KA</arg>
+<arg>nika@gmail.com</arg>
+<arg>nmbnvjg789</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=user_6_</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230128 12:17:38.460" level="INFO">Clicking element 'id=user_6_'.</msg>
+<status status="PASS" starttime="20230128 12:17:38.459" endtime="20230128 12:17:38.563"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=Login</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230128 12:17:38.564" level="INFO">Clicking element 'link=Login'.</msg>
+<status status="PASS" starttime="20230128 12:17:38.563" endtime="20230128 12:17:40.961"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=Create one</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230128 12:17:40.963" level="INFO">Clicking element 'link=Create one'.</msg>
+<status status="PASS" starttime="20230128 12:17:40.962" endtime="20230128 12:17:43.112"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=customer[first_name]</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230128 12:17:43.114" level="INFO">Typing text 'NI' into text field 'name=customer[first_name]'.</msg>
+<status status="PASS" starttime="20230128 12:17:43.112" endtime="20230128 12:17:43.420"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=customer[last_name]</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230128 12:17:43.421" level="INFO">Typing text 'KA' into text field 'name=customer[last_name]'.</msg>
+<status status="PASS" starttime="20230128 12:17:43.421" endtime="20230128 12:17:43.589"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=customer[email]</arg>
+<arg>${mailid}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230128 12:17:43.590" level="INFO">Typing text 'nika@gmail.com' into text field 'name=customer[email]'.</msg>
+<status status="PASS" starttime="20230128 12:17:43.589" endtime="20230128 12:17:43.769"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=customer[password]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230128 12:17:43.771" level="INFO">Typing text 'nmbnvjg789' into text field 'name=customer[password]'.</msg>
+<status status="PASS" starttime="20230128 12:17:43.770" endtime="20230128 12:17:43.931"/>
+</kw>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${login}</var>
+<arg>xpath=//button[text()='Create my account']</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20230128 12:17:43.949" level="INFO">${login} = &lt;selenium.webdriver.remote.webelement.WebElement (session="857043740aafc477baeed027b46a777c", element="78ca1b42-ab3f-4c42-8726-6a4b3fe1b8ec")&gt;</msg>
+<status status="PASS" starttime="20230128 12:17:43.931" endtime="20230128 12:17:43.950"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>arguments[0].click()</arg>
+<arg>ARGUMENTS</arg>
+<arg>${login}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230128 12:17:43.952" level="INFO">Executing JavaScript:
+arguments[0].click()
+By using argument:
+'&lt;selenium.webdriver.remote.webelement.WebElement (session="857043740aafc477baeed027b46a777c", element="78ca1b42-ab3f-4c42-8726-6a4b3fe1b8ec")&gt;'</msg>
+<status status="PASS" starttime="20230128 12:17:43.950" endtime="20230128 12:17:49.619"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230128 12:17:59.620" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230128 12:17:49.619" endtime="20230128 12:17:59.620"/>
+</kw>
+<status status="PASS" starttime="20230128 12:17:38.457" endtime="20230128 12:17:59.620"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230128 12:17:59.621" endtime="20230128 12:18:01.860"/>
+</kw>
+<status status="PASS" starttime="20230128 12:17:32.902" endtime="20230128 12:18:01.860"/>
+</test>
+<test id="s1-t3" name="Valid Login Testcase_Valid_Login_3" line="14">
+<kw name="Launch Browser And Navigate To Url" library="common_functionalities" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER_NAME}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230128 12:18:01.860" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230128 12:18:01.860" endtime="20230128 12:18:03.442"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230128 12:18:03.442" endtime="20230128 12:18:03.576"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>30s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230128 12:18:03.577" endtime="20230128 12:18:03.580"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230128 12:18:03.582" level="INFO">Opening url 'https://www.chumbak.com/'</msg>
+<status status="PASS" starttime="20230128 12:18:03.581" endtime="20230128 12:18:07.698"/>
+</kw>
+<status status="PASS" starttime="20230128 12:18:01.860" endtime="20230128 12:18:07.699"/>
+</kw>
+<kw name="Valid Login Template">
+<arg>SE</arg>
+<arg>St</arg>
+<arg>loni@hotmail.com</arg>
+<arg>hbhjgy687</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=user_6_</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230128 12:18:07.701" level="INFO">Clicking element 'id=user_6_'.</msg>
+<status status="PASS" starttime="20230128 12:18:07.700" endtime="20230128 12:18:07.775"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=Login</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230128 12:18:07.776" level="INFO">Clicking element 'link=Login'.</msg>
+<status status="PASS" starttime="20230128 12:18:07.775" endtime="20230128 12:18:10.643"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=Create one</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230128 12:18:10.644" level="INFO">Clicking element 'link=Create one'.</msg>
+<status status="PASS" starttime="20230128 12:18:10.643" endtime="20230128 12:18:12.553"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=customer[first_name]</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230128 12:18:12.555" level="INFO">Typing text 'SE' into text field 'name=customer[first_name]'.</msg>
+<status status="PASS" starttime="20230128 12:18:12.554" endtime="20230128 12:18:12.701"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=customer[last_name]</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230128 12:18:12.703" level="INFO">Typing text 'St' into text field 'name=customer[last_name]'.</msg>
+<status status="PASS" starttime="20230128 12:18:12.702" endtime="20230128 12:18:13.007"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=customer[email]</arg>
+<arg>${mailid}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230128 12:18:13.008" level="INFO">Typing text 'loni@hotmail.com' into text field 'name=customer[email]'.</msg>
+<status status="PASS" starttime="20230128 12:18:13.008" endtime="20230128 12:18:13.140"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=customer[password]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230128 12:18:13.141" level="INFO">Typing text 'hbhjgy687' into text field 'name=customer[password]'.</msg>
+<status status="PASS" starttime="20230128 12:18:13.141" endtime="20230128 12:18:13.299"/>
+</kw>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${login}</var>
+<arg>xpath=//button[text()='Create my account']</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20230128 12:18:13.323" level="INFO">${login} = &lt;selenium.webdriver.remote.webelement.WebElement (session="8d171d9129d1b807294c8533ecc119ac", element="ef05d0cb-b807-4c49-966a-4d361f32fc92")&gt;</msg>
+<status status="PASS" starttime="20230128 12:18:13.300" endtime="20230128 12:18:13.323"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>arguments[0].click()</arg>
+<arg>ARGUMENTS</arg>
+<arg>${login}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230128 12:18:13.326" level="INFO">Executing JavaScript:
+arguments[0].click()
+By using argument:
+'&lt;selenium.webdriver.remote.webelement.WebElement (session="8d171d9129d1b807294c8533ecc119ac", element="ef05d0cb-b807-4c49-966a-4d361f32fc92")&gt;'</msg>
+<status status="PASS" starttime="20230128 12:18:13.323" endtime="20230128 12:18:18.061"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230128 12:18:28.063" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230128 12:18:18.061" endtime="20230128 12:18:28.063"/>
+</kw>
+<status status="PASS" starttime="20230128 12:18:07.699" endtime="20230128 12:18:28.064"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230128 12:18:28.064" endtime="20230128 12:18:30.337"/>
+</kw>
+<status status="PASS" starttime="20230128 12:18:01.860" endtime="20230128 12:18:30.337"/>
+</test>
+<test id="s1-t4" name="Valid Login Testcase_Valid_Login_4" line="14">
+<kw name="Launch Browser And Navigate To Url" library="common_functionalities" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER_NAME}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230128 12:18:30.337" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230128 12:18:30.337" endtime="20230128 12:18:32.046"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230128 12:18:32.046" endtime="20230128 12:18:32.170"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>30s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230128 12:18:32.171" endtime="20230128 12:18:32.173"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230128 12:18:32.174" level="INFO">Opening url 'https://www.chumbak.com/'</msg>
+<status status="PASS" starttime="20230128 12:18:32.173" endtime="20230128 12:18:35.393"/>
+</kw>
+<status status="PASS" starttime="20230128 12:18:30.337" endtime="20230128 12:18:35.394"/>
+</kw>
+<kw name="Valid Login Template">
+<arg>CA</arg>
+<arg>sccs</arg>
+<arg>poi@dmail.com</arg>
+<arg>bhghg7080</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=user_6_</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230128 12:18:35.398" level="INFO">Clicking element 'id=user_6_'.</msg>
+<status status="PASS" starttime="20230128 12:18:35.396" endtime="20230128 12:18:35.475"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=Login</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230128 12:18:35.476" level="INFO">Clicking element 'link=Login'.</msg>
+<status status="PASS" starttime="20230128 12:18:35.475" endtime="20230128 12:18:37.644"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=Create one</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230128 12:18:37.646" level="INFO">Clicking element 'link=Create one'.</msg>
+<status status="PASS" starttime="20230128 12:18:37.644" endtime="20230128 12:18:39.733"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=customer[first_name]</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230128 12:18:39.736" level="INFO">Typing text 'CA' into text field 'name=customer[first_name]'.</msg>
+<status status="PASS" starttime="20230128 12:18:39.734" endtime="20230128 12:18:39.856"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=customer[last_name]</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230128 12:18:39.858" level="INFO">Typing text 'sccs' into text field 'name=customer[last_name]'.</msg>
+<status status="PASS" starttime="20230128 12:18:39.856" endtime="20230128 12:18:40.172"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=customer[email]</arg>
+<arg>${mailid}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230128 12:18:40.173" level="INFO">Typing text 'poi@dmail.com' into text field 'name=customer[email]'.</msg>
+<status status="PASS" starttime="20230128 12:18:40.173" endtime="20230128 12:18:40.393"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=customer[password]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230128 12:18:40.395" level="INFO">Typing text 'bhghg7080' into text field 'name=customer[password]'.</msg>
+<status status="PASS" starttime="20230128 12:18:40.393" endtime="20230128 12:18:40.529"/>
+</kw>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${login}</var>
+<arg>xpath=//button[text()='Create my account']</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20230128 12:18:40.548" level="INFO">${login} = &lt;selenium.webdriver.remote.webelement.WebElement (session="90cdffe20c7b1f08af07180405d3f252", element="274cea68-c2f0-44e3-bb0c-58ceb145cbde")&gt;</msg>
+<status status="PASS" starttime="20230128 12:18:40.529" endtime="20230128 12:18:40.548"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>arguments[0].click()</arg>
+<arg>ARGUMENTS</arg>
+<arg>${login}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230128 12:18:40.551" level="INFO">Executing JavaScript:
+arguments[0].click()
+By using argument:
+'&lt;selenium.webdriver.remote.webelement.WebElement (session="90cdffe20c7b1f08af07180405d3f252", element="274cea68-c2f0-44e3-bb0c-58ceb145cbde")&gt;'</msg>
+<status status="PASS" starttime="20230128 12:18:40.548" endtime="20230128 12:18:45.198"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230128 12:18:55.199" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230128 12:18:45.198" endtime="20230128 12:18:55.199"/>
+</kw>
+<status status="PASS" starttime="20230128 12:18:35.394" endtime="20230128 12:18:55.199"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230128 12:18:55.199" endtime="20230128 12:18:57.426"/>
+</kw>
+<status status="PASS" starttime="20230128 12:18:30.337" endtime="20230128 12:18:57.426"/>
+</test>
+<doc>This file contains test cases related to valid login</doc>
+<status status="PASS" starttime="20230128 12:16:53.206" endtime="20230128 12:18:57.426"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="App Coursera">App Coursera</stat>
+<stat pass="4" fail="0" skip="0" id="s1" name="Valid Login test">Valid Login test</stat>
 </suite>
 </statistics>
 <errors>

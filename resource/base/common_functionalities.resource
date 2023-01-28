@@ -7,7 +7,7 @@ Library  SeleniumLibrary
 *** Variables ***
 
 ${BROWSER_NAME}   chrome
-${URL}  https://opensource-demo.orangehrmlive.com/
+${URL}  https://www.chumbak.com/
 
 
 *** Keywords ***
