@@ -1,0 +1,65 @@
+1675050649076	geckodriver	INFO	Listening on 127.0.0.1:60336
+1675050652139	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60337" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\40032118\\AppData\\Local\\Temp\\rust_mozprofileeN7jPR"
+1675050653135	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\40032118\\AppData\\Local\\Temp\\rust_mozprofileeN7jPR\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60337/devtools/browser/71b61189-befe-48ec-a3f1-df6092cfcab6
+1675050657415	Marionette	INFO	Listening on port 60425
+Read port: 60425
+1675050657466	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdnt.netcoresmartech.com/smartechcode.js?ver=3.32, line 435: unreachable code after return statement
+JavaScript warning: https://cdnt.netcoresmartech.com/smartechcode.js?ver=3.32, line 435: unreachable code after return statement
+JavaScript error: https://cdn.shopify.com/s/files/1/0601/1093/0098/t/60/assets/custom.js?v=111169970794598951331663753762&enable_js_minification=1, line 388: ReferenceError: membershipCartModal is not defined
+JavaScript error: https://cdn.myshopapps.com/iwish/iwishlist_v2.js, line 1: ReferenceError: iwish_cid is not defined
+1675050675518	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript error: https://www.relove.in/script-tags/orders-page.js?shop=chumbakdesign.myshopify.com, line 1: SyntaxError: redeclaration of const shop_re
+1675050675902	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://cdn.shopify.com/s/files/1/0601/1093/0098/t/60/assets/custom.js?v=111169970794598951331663753762&enable_js_minification=1, line 388: ReferenceError: membershipCartModal is not defined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://osjs.netcoresmartech.com/v1/js-versioning?clientkey=ADGMOT35CHFLVDHBJNIG50K96BV0I2731J0I5LOKIKEEKS3D3F5G&siteid=974b83575129e16f3ed0e3a6c3bb132a&rc=s, line 2: TypeError: e is undefined
+JavaScript error: https://cdn.jsdelivr.net/gh/apphq/slidecart-dist@latest/slidecarthq.js?1675050675216, line 49: Error: Request aborted
+1675050677154	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://www.chumbak.com/account/login?return_url=%2Faccount line 46 > injectedScript, line 23: ReferenceError: smartech is not defined
+JavaScript error: https://cdn.shopify.com/s/files/1/0601/1093/0098/t/60/assets/custom.js?v=111169970794598951331663753762&enable_js_minification=1, line 388: ReferenceError: membershipCartModal is not defined
+JavaScript warning: https://cdnt.netcoresmartech.com/smartechcode.js?ver=3.32, line 435: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.chumbak.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.chumbak.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.chumbak.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.chumbak.com"
+1675050680285	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://www.relove.in/script-tags/orders-page.js?shop=chumbakdesign.myshopify.com, line 1: SyntaxError: redeclaration of const shop_re
+JavaScript error: https://www.relove.in/script-tags/orders-page.js?shop=chumbakdesign.myshopify.com, line 1: SyntaxError: redeclaration of const shop_re
+1675050680646	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.myshopapps.com/iwish/iwishlist_v2.js, line 1: ReferenceError: iwish_cid is not defined
+JavaScript warning: https://cdnt.netcoresmartech.com/smartechcode.js?ver=3.32, line 435: unreachable code after return statement
+JavaScript warning: https://cdnt.netcoresmartech.com/smartechcode.js?ver=3.32, line 435: unreachable code after return statement
+JavaScript error: https://cdnt.netcoresmartech.com/smartechcode.js?ver=3.32, line 1033: ReferenceError: smartech is not defined
+JavaScript error: https://cdnt.netcoresmartech.com/smartechcode.js?ver=3.32, line 1033: ReferenceError: smartech is not defined
+JavaScript error: https://www.chumbak.com/account/register line 46 > injectedScript, line 23: ReferenceError: smartech is not defined
+JavaScript warning: https://cdnt.netcoresmartech.com/smartechcode.js?ver=3.32, line 435: unreachable code after return statement
+1675050683642	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript error: https://www.relove.in/script-tags/orders-page.js?shop=chumbakdesign.myshopify.com, line 1: SyntaxError: redeclaration of const shop_re
+JavaScript error: https://www.relove.in/script-tags/orders-page.js?shop=chumbakdesign.myshopify.com, line 1: SyntaxError: redeclaration of const shop_re
+JavaScript error: https://cdn.myshopapps.com/iwish/iwishlist_v2.js, line 1: ReferenceError: iwish_cid is not defined
+JavaScript warning: https://cdnt.netcoresmartech.com/smartechcode.js?ver=3.32, line 435: unreachable code after return statement
+JavaScript warning: https://cdnt.netcoresmartech.com/smartechcode.js?ver=3.32, line 435: unreachable code after return statement
+1675050684817	Marionette	INFO	Stopped listening on port 60425
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+

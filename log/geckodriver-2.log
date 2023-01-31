@@ -1,0 +1,49 @@
+1675050601525	geckodriver	INFO	Listening on 127.0.0.1:60100
+1675050604576	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60101" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\40032118\\AppData\\Local\\Temp\\rust_mozprofilebZG39V"
+1675050605095	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\40032118\\AppData\\Local\\Temp\\rust_mozprofilebZG39V\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60101/devtools/browser/390276cb-9dfb-4a44-bdee-a8b653f36429
+1675050608134	Marionette	INFO	Listening on port 60126
+Read port: 60126
+1675050608260	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.shopify.com/s/files/1/0601/1093/0098/t/60/assets/custom.js?v=111169970794598951331663753762&enable_js_minification=1, line 388: ReferenceError: membershipCartModal is not defined
+JavaScript warning: https://cdnt.netcoresmartech.com/smartechcode.js?ver=3.32, line 435: unreachable code after return statement
+JavaScript warning: https://cdnt.netcoresmartech.com/smartechcode.js?ver=3.32, line 435: unreachable code after return statement
+1675050617042	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript error: https://cdn.myshopapps.com/iwish/iwishlist_v2.js, line 1: ReferenceError: iwish_cid is not defined
+JavaScript error: https://cdn.shopify.com/s/files/1/0601/1093/0098/t/60/assets/custom.js?v=111169970794598951331663753762&enable_js_minification=1, line 388: ReferenceError: membershipCartModal is not defined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://osjs.netcoresmartech.com/v1/js-versioning?clientkey=ADGMOT35CHFLVDHBJNIG50K96BV0I2731J0I5LOKIKEEKS3D3F5G&siteid=974b83575129e16f3ed0e3a6c3bb132a&rc=s, line 2: TypeError: e is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.shopify.com/shopifycloud/shopify_chat/storefront/shopifyChatV1.js?api_env=production&button_color=%23202a36&button_style=icon&i=chat_bubble&p=bottom_right&shop_id=lJhT06yZe7yC-jKT1h5MGf99L9NZem_UfRJxf6Y8xfE&t=no_text&v=1&shop=chumbakdesign.myshopify.com, line 16: Error: Error completing request. A network failure may have prevented the request from completing. Error: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.chumbak.com/account/login?return_url=%2Faccount line 46 > injectedScript, line 23: ReferenceError: smartech is not defined
+JavaScript warning: https://cdnt.netcoresmartech.com/smartechcode.js?ver=3.32, line 435: unreachable code after return statement
+JavaScript error: https://cdn.shopify.com/s/files/1/0601/1093/0098/t/60/assets/custom.js?v=111169970794598951331663753762&enable_js_minification=1, line 388: ReferenceError: membershipCartModal is not defined
+1675050621122	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.chumbak.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.chumbak.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.chumbak.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.chumbak.com"
+JavaScript error: https://www.relove.in/script-tags/orders-page.js?shop=chumbakdesign.myshopify.com, line 1: SyntaxError: redeclaration of const shop_re
+JavaScript error: https://www.relove.in/script-tags/orders-page.js?shop=chumbakdesign.myshopify.com, line 1: SyntaxError: redeclaration of const shop_re
+JavaScript error: https://cdn.myshopapps.com/iwish/iwishlist_v2.js, line 1: ReferenceError: iwish_cid is not defined
+JavaScript error: https://cdn.jsdelivr.net/gh/apphq/slidecart-dist@latest/slidecarthq.js?1675050620553, line 49: Error: Request aborted
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdnt.netcoresmartech.com/smartechcode.js?ver=3.32, line 435: unreachable code after return statement
+JavaScript warning: https://cdnt.netcoresmartech.com/smartechcode.js?ver=3.32, line 435: unreachable code after return statement
+1675050625792	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript error: https://cdn.myshopapps.com/iwish/iwishlist_v2.js, line 1: ReferenceError: iwish_cid is not defined
+JavaScript error: https://www.relove.in/script-tags/orders-page.js?shop=chumbakdesign.myshopify.com, line 1: SyntaxError: redeclaration of const shop_re
+JavaScript error: https://www.relove.in/script-tags/orders-page.js?shop=chumbakdesign.myshopify.com, line 1: SyntaxError: redeclaration of const shop_re
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.chumbak.com"
+JavaScript error: https://cdn.shopify.com/s/files/1/0601/1093/0098/t/60/assets/custom.js?v=111169970794598951331663753762&enable_js_minification=1, line 388: ReferenceError: membershipCartModal is not defined
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.chumbak.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.jsdelivr.net/gh/apphq/slidecart-dist@latest/slidecarthq.js?1675050625649, line 49: Error: Request aborted
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1675050629772	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+1675050636281	Marionette	INFO	Stopped listening on port 60126

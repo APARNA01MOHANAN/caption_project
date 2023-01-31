@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation  This file contains test cases related to valid login
+...  re-run the script in case of any failure
 
 Resource    ../resource/base/common_functionalities.resource
 
@@ -15,7 +16,7 @@ Valid Login Testcase_${test_case}
 
 *** Keywords ***
 Valid Login Template
-    [Arguments]  ${firstname}  ${lastname}  ${mailid}  ${password}
+    [Arguments]  ${firstname}  ${lastname}  ${mailid}  ${password}  ${expected_msg}
     Click Element   id=user_6_
     Click Element   link=Login
     Click Element   link=Create one
@@ -25,6 +26,5 @@ Valid Login Template
     Input Text   name=customer[password]    ${password}
     ${login}  Get WebElement   xpath=//button[text()='Create my account']
     Execute Javascript  arguments[0].click()  ARGUMENTS      ${login}
-
-
+    Element Should Contain   link=reset your password    ${expected_msg}
     sleep  10s
