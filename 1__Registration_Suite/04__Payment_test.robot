@@ -40,4 +40,4 @@ Add to Cart
     Click Element   xpath=//button[@class='step__footer__continue-btn btn']
     Page Should Contain   Shipping method
     Element Should Contain   xpath=//p[contains(text(),'This pincode is not serviceable for this Product')]  This pincode is not serviceable for this Product Flower Owl Sling Bag
-    Sleep   30s
+    Sleep   5s

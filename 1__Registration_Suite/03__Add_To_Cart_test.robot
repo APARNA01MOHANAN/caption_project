@@ -29,7 +29,7 @@ Add to Cart
     ${apply}  Get WebElement   xpath=//*[text()='Apply']
     Execute Javascript  arguments[0].click()  ARGUMENTS      ${apply}
     Element Should Contain   xpath=//p[contains(text(),'Enter a valid discount')]  Enter a valid discount code or gift card
-    sleep  30s
+    sleep  5s
 
 
 
