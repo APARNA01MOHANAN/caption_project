@@ -16,12 +16,15 @@ Invalid Login Testcase_${test_case}
 
 *** Keywords ***
 Invalid Login Template
-    [Arguments]   ${mailid}  ${password}  ${expected_error}
+    [Arguments]  ${firstname}  ${lastname}  ${mailid}  ${password}  ${expected_error}
     Click Element   id=user_6_
     Click Element   link=Login
+    Click Element   link=Create one
+    Input Text   name=customer[first_name]    ${firstname}
+    Input Text   name=customer[last_name]    ${lastname}
     Input Text   name=customer[email]    ${mailid}
     Input Text   name=customer[password]    ${password}
-    Click Element   xpath=//button[text()='Login']
-    #it may fail while excecuting next line as it may stay still on login page so re-run incase of failure
-    Element Should Contain   xpath=//p[contains(text(),'Incorrect email')]    ${expected_error}
-    sleep  10s
+    ${login}  Get WebElement   xpath=//button[text()='Create my account']
+    Execute Javascript  arguments[0].click()  ARGUMENTS      ${login}
+    Element Should Contain   xpath=//li[contains(text(),' is too short ')]    ${expected_error}  
+    sleep  5s
