@@ -6,14 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="98c8c771-1cff-479a-bde2-e4a00c5a7289" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1__Login_Suite/01__Valid_Registration_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/1__Registration_Suite/01__Valid_Registration_test.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1__Login_Suite/02__Invalid_Registration_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/1__Registration_Suite/02__Invalid_Registration_test.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1__Login_Suite/03__Add_To_Cart_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/1__Registration_Suite/03__Add_To_Cart_test.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1__Login_Suite/04__Payment_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/1__Registration_Suite/04__Payment_test.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1__Registration_Suite/03__Add_To_Cart_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/2__AddtoCart_Suite/01__Add_To_Cart_test.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1__Registration_Suite/04__Payment_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/2__AddtoCart_Suite/02__Payment_test.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/log/output.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_input_data/CHUMBAK_DATA.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_input_data/CHUMBAK_DATA.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,15 +28,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Caption_Project"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Caption_Project/2__AddtoCart_Suite&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Caption_Project\2__AddtoCart_Suite" />
       <recent name="C:\Caption_Project\test_input_data" />
     </key>
   </component>
