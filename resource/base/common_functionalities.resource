@@ -6,7 +6,7 @@ Library  SeleniumLibrary
 
 *** Variables ***
 
-${BROWSER_NAME}   chrome
+${BROWSER_NAME}   edge
 ${URL}  https://www.chumbak.com/
 
 

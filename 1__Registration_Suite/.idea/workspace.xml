@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="35da1665-fe1b-4b8d-8af7-5063e1ca7e5b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02__Invalid_Registration_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/02__Invalid_Registration_test.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2__AddtoCart_Suite/01__Add_To_Cart_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/../2__AddtoCart_Suite/01__Add_To_Cart_test.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2__AddtoCart_Suite/02__Payment_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/../2__AddtoCart_Suite/02__Payment_test.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../appium_assessment_coursera/app_coursera.robot" beforeDir="false" afterPath="$PROJECT_DIR$/../appium_assessment_coursera/app_coursera.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../log/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/../log/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../log/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../log/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../log/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../log/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resource/base/common_functionalities.resource" beforeDir="false" afterPath="$PROJECT_DIR$/../resource/base/common_functionalities.resource" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2LV9cW4SH5j5MjFHjNGeIRzRKr6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Caption_Project/2__AddtoCart_Suite"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="35da1665-fe1b-4b8d-8af7-5063e1ca7e5b" name="Changes" comment="" />
+      <created>1675945462074</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675945462074</updated>
+    </task>
+    <servers />
+  </component>
+</project>

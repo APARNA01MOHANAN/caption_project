@@ -45,6 +45,6 @@ Select Courses
     ${text}     Get Text    xpath=//*[contains(@text,'About this Course')]
     Log To Console    ${text}
     Element Text Should Be   xpath=//*[contains(@text,'About this Course')]  About this Course
-    sleep  30s
+    sleep  5s
     [Teardown]  Close Application
 

@@ -19,6 +19,12 @@ Add to Cart
     Mouse Over   xpath=//span[text()='Sort by : ']
     Wait Until Element Is Visible   link=Price, low to high
     Click Element   link=Price, low to high
+    Wait Until Element Is Visible   xpath=(//*[@class='st-mm-custom-product-page-atc'])[1]  timeout=20s
+    Click Element   xpath=(//*[@class='st-mm-custom-product-page-atc'])[1]
+    Input Text   id=mm-homepage-search    living
+    Wait Until Element Is Visible   xpath=(//*[@class='st-mm-custom-product-page-atc'])[1]  timeout=20s
+    Click Element   xpath=(//*[@class='st-mm-custom-product-page-atc'])[1]
+    Click Element   xpath=//*[@class='Header__Icon Icon-Wrapper Icon-Wrapper--clickable Cart-Header']
     Click Element   xpath=//a[contains(text(),'Makeup Buff Pouch-Blue & Green')]
     ${addtocart}  Get WebElement   xpath=//*[text()='Add to cart']
     Execute Javascript  arguments[0].click()  ARGUMENTS      ${addtocart}
@@ -29,7 +35,7 @@ Add to Cart
     ${apply}  Get WebElement   xpath=//*[text()='Apply']
     Execute Javascript  arguments[0].click()  ARGUMENTS      ${apply}
     Element Should Contain   xpath=//p[contains(text(),'Enter a valid discount')]  Enter a valid discount code or gift card
-    sleep  5s
+    sleep  15s
 
 
 

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230209 17:55:05.919" rpa="false" schemaversion="3">
+<suite id="s1" name="Vvsv" source="C:\Caption_Project\2__AddtoCart_Suite\vvsv.robot">
+<test id="s1-t1" name="Add to Cart" line="10">
+<kw name="Launch Browser And Navigate To Url" library="common_functionalities" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER_NAME}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230209 17:55:06.399" level="INFO">Opening browser 'edge' to base url 'None'.</msg>
+<status status="PASS" starttime="20230209 17:55:06.385" endtime="20230209 17:55:08.735"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230209 17:55:08.737" endtime="20230209 17:55:08.892"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>30s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230209 17:55:08.893" endtime="20230209 17:55:08.926"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230209 17:55:08.930" level="INFO">Opening url 'https://www.chumbak.com/'</msg>
+<status status="PASS" starttime="20230209 17:55:08.928" endtime="20230209 17:55:12.975"/>
+</kw>
+<status status="PASS" starttime="20230209 17:55:06.385" endtime="20230209 17:55:12.978"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=user_6_</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230209 17:55:12.981" level="INFO">Clicking element 'id=user_6_'.</msg>
+<status status="PASS" starttime="20230209 17:55:12.979" endtime="20230209 17:55:13.098"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=Login</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230209 17:55:13.100" level="INFO">Clicking element 'link=Login'.</msg>
+<status status="PASS" starttime="20230209 17:55:13.099" endtime="20230209 17:55:16.165"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=customer[email]</arg>
+<arg>aparnamohanan@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230209 17:55:16.172" level="INFO">Typing text 'aparnamohanan@gmail.com' into text field 'name=customer[email]'.</msg>
+<status status="PASS" starttime="20230209 17:55:16.166" endtime="20230209 17:55:16.535"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=customer[password]</arg>
+<arg>aparna_123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230209 17:55:16.539" level="INFO">Typing text 'aparna_123' into text field 'name=customer[password]'.</msg>
+<status status="PASS" starttime="20230209 17:55:16.537" endtime="20230209 17:55:17.054"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[text()='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230209 17:55:17.058" level="INFO">Clicking element 'xpath=//button[text()='Login']'.</msg>
+<status status="PASS" starttime="20230209 17:55:17.055" endtime="20230209 17:55:20.749"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=mm-homepage-search</arg>
+<arg>watch</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230209 17:55:20.749" level="INFO">Typing text 'watch' into text field 'id=mm-homepage-search'.</msg>
+<status status="PASS" starttime="20230209 17:55:20.749" endtime="20230209 17:55:21.028"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//span[text()='Sort by : ']</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230209 17:55:21.028" endtime="20230209 17:55:21.859"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath=//span[text()='Sort by : ']</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20230209 17:55:21.867" level="INFO">Simulating Mouse Over on element 'xpath=//span[text()='Sort by : ']'.</msg>
+<status status="PASS" starttime="20230209 17:55:21.867" endtime="20230209 17:55:22.152"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>link=Price, low to high</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230209 17:55:22.152" endtime="20230209 17:55:22.305"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=Price, low to high</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230209 17:55:22.305" level="INFO">Clicking element 'link=Price, low to high'.</msg>
+<status status="PASS" starttime="20230209 17:55:22.305" endtime="20230209 17:55:22.577"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//a[contains(text(),'Makeup Buff Pouch-Blue &amp; Green')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230209 17:55:22.577" level="INFO">Clicking element 'xpath=//a[contains(text(),'Makeup Buff Pouch-Blue &amp; Green')]'.</msg>
+<status status="PASS" starttime="20230209 17:55:22.577" endtime="20230209 17:55:25.336"/>
+</kw>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${addtocart}</var>
+<arg>xpath=//*[text()='Add to cart']</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20230209 17:55:25.527" level="INFO">${addtocart} = &lt;selenium.webdriver.remote.webelement.WebElement (session="2b9b392ae8da6de09c7c63b08baef8c2", element="5380c52a-62d7-4818-85f1-1f4a4b3c40a5")&gt;</msg>
+<status status="PASS" starttime="20230209 17:55:25.337" endtime="20230209 17:55:25.527"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>arguments[0].click()</arg>
+<arg>ARGUMENTS</arg>
+<arg>${addtocart}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230209 17:55:25.531" level="INFO">Executing JavaScript:
+arguments[0].click()
+By using argument:
+'&lt;selenium.webdriver.remote.webelement.WebElement (session="2b9b392ae8da6de09c7c63b08baef8c2", element="5380c52a-62d7-4818-85f1-1f4a4b3c40a5")&gt;'</msg>
+<status status="PASS" starttime="20230209 17:55:25.527" endtime="20230209 17:55:25.904"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//a[@aria-label='Open cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230209 17:55:25.907" level="INFO">Clicking element 'xpath=//a[@aria-label='Open cart']'.</msg>
+<msg timestamp="20230209 17:55:57.090" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230209 17:55:57.090" level="FAIL">Element with locator 'xpath=//a[@aria-label='Open cart']' not found.</msg>
+<status status="FAIL" starttime="20230209 17:55:25.904" endtime="20230209 17:55:57.099"/>
+</kw>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${checkout}</var>
+<arg>xpath=//*[text()='Checkout']</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" starttime="20230209 17:55:57.099" endtime="20230209 17:55:57.099"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>arguments[0].click()</arg>
+<arg>ARGUMENTS</arg>
+<arg>${checkout}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20230209 17:55:57.099" endtime="20230209 17:55:57.099"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=checkout_reduction_code</arg>
+<arg>adsg456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230209 17:55:57.099" endtime="20230209 17:55:57.099"/>
+</kw>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${apply}</var>
+<arg>xpath=//*[text()='Apply']</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" starttime="20230209 17:55:57.099" endtime="20230209 17:55:57.099"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>arguments[0].click()</arg>
+<arg>ARGUMENTS</arg>
+<arg>${apply}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20230209 17:55:57.099" endtime="20230209 17:55:57.099"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath=//p[contains(text(),'Enter a valid discount')]</arg>
+<arg>Enter a valid discount code or gift card</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" starttime="20230209 17:55:57.099" endtime="20230209 17:55:57.099"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230209 17:55:57.099" endtime="20230209 17:55:57.099"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230209 17:55:57.099" endtime="20230209 17:55:59.427"/>
+</kw>
+<status status="FAIL" starttime="20230209 17:55:06.385" endtime="20230209 17:55:59.427">Element with locator 'xpath=//a[@aria-label='Open cart']' not found.</status>
+</test>
+<doc>This file contains test case related to add to cart and checking out with some error message
+important note : it is advisable to place the cursor at any place that doesn't interrupt the site activity
+As while placing the cursor when chumbak site is processing may mouse over on some categories and will interrupt your process</doc>
+<status status="FAIL" starttime="20230209 17:55:05.919" endtime="20230209 17:55:59.427"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Vvsv">Vvsv</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

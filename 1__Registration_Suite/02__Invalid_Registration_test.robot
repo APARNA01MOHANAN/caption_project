@@ -26,5 +26,6 @@ Invalid Registration Template
     Input Text   name=customer[password]    ${password}
     ${login}  Get WebElement   xpath=//button[text()='Create my account']
     Execute Javascript  arguments[0].click()  ARGUMENTS      ${login}
+
     Element Should Contain   xpath=//li[contains(text(),' is too short ')]    ${expected_error}
     sleep  5s
